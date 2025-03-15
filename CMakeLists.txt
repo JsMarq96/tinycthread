@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.4)
 project(TinyCThread)
 enable_testing()
 
-find_package(Threads REQUIRED)
+find_package(Threads)
 
 add_library(tinycthread STATIC source/tinycthread.c)
 target_link_libraries(tinycthread ${CMAKE_THREAD_LIBS_INIT})
